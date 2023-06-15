@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="{{ asset('css/aos/aos.css') }}" rel="stylesheet">
   <link href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -21,16 +20,14 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html" class="fw-bold">Graha Estetika</a></h1>
+        <h1><a href="{{route('index')}}" class="fw-bold">Graha Estetika</a></h1>
       </div>
     </div>
-  </header><!-- End Header -->
+  </header>
 
     <section class="vh-100" style="background-color: #eee;">
         <div class="container h-100">
@@ -104,16 +101,13 @@
             </div>
           </div>
         </div>
-      </section>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </section>
 
   <script src="{{asset('js/aos/aos.js')}}"></script>
   <script src="{{asset('js/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('js/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('js/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('js/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
   <script src="{{asset('js/main.js')}}"></script>
 
 </body>

@@ -25,7 +25,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html" class="fw-bold">Graha Estetika</a></h1>
+        <h1><a href="{{route('index')}}" class="fw-bold">Graha Estetika</a></h1>
       </div>
     </div>
   </header>
@@ -43,8 +43,7 @@
                         @csrf
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ old('email') }}">
                           @error('email')
                           <span class="text-red-500">{{ $message }}</span>
                           @enderror
@@ -82,22 +81,11 @@
         </div>
       </section>
 
-
-  <footer id="footer">
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Graha Estetika 2023</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
-
   <script src="{{asset('js/aos/aos.js')}}"></script>
   <script src="{{asset('js/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('js/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('js/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('js/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
   <script src="{{asset('js/main.js')}}"></script>
 
 </body>

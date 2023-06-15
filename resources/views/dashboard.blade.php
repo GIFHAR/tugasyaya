@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="{{ asset('css/aos/aos.css') }}" rel="stylesheet">
   <link href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -21,8 +20,6 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -36,13 +33,13 @@
           <li><a class="nav-link scrollto" href="#features">Fasilitas</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#daftarrumah">Daftar Rumah</a></li>
+          <li><a class="getstarted scrollto" href="{{ route('index')}}">Log out</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
@@ -59,11 +56,9 @@
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
-
-    <!-- ======= App Features Section ======= -->
     <section id="features" class="features">
       <div class="container">
 
@@ -106,9 +101,8 @@
 
 
       </div>
-    </section><!-- End App Features Section -->
+    </section>
 
-    <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
       <div class="container" data-aos="fade-up">
 
@@ -131,9 +125,8 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section>
 
-    <!-- ======= Daftar Rumah ======= -->
         <section id="daftarrumah" class="daftarrumah">
           <div class="container">
             <div class="section-title">
@@ -171,7 +164,6 @@
 
         </section>
 
-    <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -239,11 +231,52 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
 
-  <!-- ======= Footer ======= -->
+          <div class="section-title">
+            <h2>Peta Perumahan</h2>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+            </div>
+            <div class="card-body p-0">
+                <div class="map-container">
+                    <iframe src="https://jualbelikavlinggrahaestetikasemarang.netlify.app/" frameborder="0"></iframe>
+                </div>
+            </div>
+          </div>
+        <style>
+            .card {
+                height: 500px;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .map-container {
+                position: relative;
+                padding-bottom: 100%; /* 1:1 aspect ratio */
+                height: 0;
+            }
+
+            .map-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+
+
+        </div>
+    </section>
+  </main>
+
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -288,21 +321,17 @@
         &copy; Copyright <strong><span>Graha Estetika 2023</span></strong>. All Rights Reserved
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="{{asset('js/aos/aos.js')}}"></script>
   <script src="{{asset('js/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('js/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('js/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('js/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
   <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 
 </html>
-
